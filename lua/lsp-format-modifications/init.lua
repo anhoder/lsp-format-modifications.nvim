@@ -147,6 +147,7 @@ M.format_modifications = function(lsp_client, bufnr, config)
 				if max_retry <= 0 then
 					return
 				end
+				max_retry = max_retry - 1
 				goto next_diff
 			end
 
